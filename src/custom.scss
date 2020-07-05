@@ -20,7 +20,6 @@ $body-bg: #fff;
     top: 0;
     width: 100%;
     z-index: 890;
-    height: 15%;
     padding: 1%;
     display: flex;
     @media screen and (max-width: 426px) {
@@ -47,21 +46,38 @@ $body-bg: #fff;
 
 .app-sidebar {
     padding: 1%;
-    width: 15%;
-    
+    position: absolute;
     text-align: left;
-    >ul {
-        margin-top: 5%;
-    }
+    width: 15%;
+    min-height: 100%;
     @media screen and (max-width: 426px) {
-        width: 38%;
-        padding-left: 3%;
+        width: 100%;
+        padding: 2%;
+        min-height: 0;
+        height: 38%;
+        min-width: 100%;
+        transform: translate(0px, -80px);
     }
+    >ul {
+        margin-top: 30%;
+        @media screen and (max-width: 426px) {
+            margin-top: 40%;
+        }
+    }
+    
 }
 
 .app-main {
-    flex: 1;
-    padding: 1%;
+        position: absolute;
+        width: 85%;
+        right: 0;
+        padding: 5% 1% 1% 0;
+        @media screen and (max-width: 426px) {
+            position: absolute;
+            padding: 1% 1% 1% 0;
+            margin-top: 45%;
+            left: 0;
+        }
 }
 
 .bg-dark {

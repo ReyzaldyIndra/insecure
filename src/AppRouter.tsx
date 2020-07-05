@@ -39,7 +39,7 @@ class AppRouter extends Component {
     render() {
         return (
             <Router>
-                <div style={{height:"100%", width:"100%", position:"relative", paddingTop:"50px"}}>
+                <div style={{height:"100%", width:"100%", position:"relative"}}>
                     <div className="app-header bg-dark">
                         <div className="bg-dark header-logo">
                             <img  alt="" src="https://proxy.cakap.com/aws-s3/dev.squline.com/uploads/student/00472220e2038bcae199ee5d879f8667.png"></img>
