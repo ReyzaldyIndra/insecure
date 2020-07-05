@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import Table from './Table'
-import Form from './Form'
-import Api from './Api/Api'
+import {Container, Row} from 'react-bootstrap'
+import Monitor from './Monitor/Monitor'
 
 class App extends React.Component {
   state = {
@@ -26,11 +25,11 @@ class App extends React.Component {
     render() {
       const {characters} = this.state
       return (
-          <div className="container">
-            <Table characterData={characters} removeCharacter={this.removeCharacter}/>
-            <Form handleSubmit={this.handleSubmit}/>
-            <Api/>
-          </div>
+          <Container>
+            <Row>
+              <Monitor/>
+            </Row>
+          </Container>
       )
     }
   }

@@ -1,4 +1,73 @@
 // Override default variables before the import
-$body-bg: #000;
+$body-bg: #fff;
+
+.root {
+    height: 100%;
+}
+
+.app-aside {
+    position: fixed;
+    z-index: 800;
+}
+
+.app-body {
+    height: 100%;
+    display: flex;
+}
+
+.app-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 890;
+    height: 15%;
+    padding: 1%;
+    display: flex;
+    @media screen and (max-width: 426px) {
+        height: 8%;
+    }
+    .header-logo {
+        width: 15%;
+        >img {
+            width: 15%;
+        }
+        @media screen and (max-width: 426px) {
+            width: 38%;
+        }
+    }
+
+    .app-header-navbar {
+        width: 90%;
+
+        @media screen and (max-width: 426px) {
+            width: 62%;
+        }
+    }
+}
+
+.app-sidebar {
+    padding: 1%;
+    width: 15%;
+    
+    text-align: left;
+    >ul {
+        margin-top: 5%;
+    }
+    @media screen and (max-width: 426px) {
+        width: 38%;
+        padding-left: 3%;
+    }
+}
+
+.app-main {
+    flex: 1;
+    padding: 1%;
+}
+
+.bg-dark {
+    background-color: #3a3f51;
+    color: #a6a8b1;
+}
+
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';

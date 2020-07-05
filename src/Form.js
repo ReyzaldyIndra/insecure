@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Button } from 'react-bootstrap'
 
 class Form extends Component {
     //initial form value
@@ -43,7 +44,7 @@ handleChange = event => {
                 value={job}
                 onChange={this.handleChange}
                 />
-                <input type="button" value="Submit" onClick={this.submitForm}/>
+                <Button as="input" type="button" value="Submit" onClick={this.submitForm}/>
             </form>
         )
     }
