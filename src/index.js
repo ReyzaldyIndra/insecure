@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import App from './App'
-import 'bootstrap/dist/css/bootstrap.css';
+import './custom.scss'
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
 
 
