@@ -25,11 +25,7 @@ class App extends React.Component {
     render() {
       const {characters} = this.state
       return (
-          <Container>
-            <Row>
-              <Monitor/>
-            </Row>
-          </Container>
+          <Monitor/>
       )
     }
   }

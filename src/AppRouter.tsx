@@ -17,14 +17,6 @@ const routes = [
         path: "/face-enrollment",
         main: () => <FaceEnrollment/>
     },
-    {
-        path: "/add-camera",
-        main: () => <AddCamera/>
-    },
-    {
-        path: "/history",
-        main: () => <Api/>
-    }
 ]
 class AppRouter extends Component {
     initialState = {
@@ -40,30 +32,25 @@ class AppRouter extends Component {
         return (
             <Router>
                 <div style={{height:"100%", width:"100%", position:"relative"}}>
-                    <div className="app-header bg-dark">
+                    {/* <div className="app-header bg-dark">
                         <div className="bg-dark header-logo">
-                            <img  alt="" src="https://proxy.cakap.com/aws-s3/dev.squline.com/uploads/student/00472220e2038bcae199ee5d879f8667.png"></img>
+                            
                         </div>
                         <div className="app-header-navbar">
                             <button className="btn btn-primary" onClick={this.HandleClose}>Hide</button>
                         </div>
-                    </div>
+                    </div> */}
     
                     <div className="app-body">
                     
-                    <div className="app-sidebar bg-dark">
+                    <div className="app-sidebar bg-dark" style={{textAlign:"center", height:"51em"}}>
+                    <img style={{width:"50%"}}  alt="" src="https://insecure-res-doc.s3.amazonaws.com/res-arch/Copy+of++eSports+Ninja+-+APPROVED.png"></img>
                         <ul style={{listStyleType:"none", padding:"0"}}>
                             <li>
                                 <Link style={{color:"#ffffff", textDecoration: "none"}} to="/">Monitor</Link>
                             </li>
-                            <li>
-                                <Link style={{color:"#ffffff", textDecoration: "none"}}  to="/face-enrollment">Face Enrollment</Link>
-                            </li>
-                            <li>
-                                <Link style={{color:"#ffffff", textDecoration: "none"}}  to="/add-camera">Add Camera</Link>
-                            </li>
-                            <li>
-                                <Link style={{color:"#ffffff", textDecoration: "none"}}  to="/history">Report History</Link>
+                            <li style={{marginTop:"20px"}}>
+                                <Link style={{color:"#ffffff", textDecoration: "none"}}  to="/face-enrollment">Report</Link>
                             </li>
                         </ul>
     
